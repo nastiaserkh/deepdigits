@@ -1,49 +1,400 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.first-background {
+  height: 100vh;
+  background: transparent url('../assets/1.png') 0% 0% no-repeat padding-box;
+    background-size: 100% 100%;
 }
 
 .header {
   height: 20vh;
-  background: pink;
+  line-height: 6rem;
 }
 
-.logo, .navigation {
-  flex: 1;
+.navigation {
   display: inherit;
-  background-color: blueviolet;
+}
+
+.logo, .navigation, .stats, .feedbacks, .links, .form {
+  flex: 1;
+}
+
+.navigation {
+  padding-top: 1.6rem;
 }
 
 .logo {
-  /* font-size: 1.7rem; */
-  /* font-weight: bold; */
-  background-color: red;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
 }
 
-.learn-more, .header {
+.learn-more, .header, .form-container {
   display: flex;
   margin-left: 8rem;
 }
 
+
 .learn-more {
   height: 80vh;
+  margin-top: 3rem;
 }
 
 .learn-more > .text {
   flex: 4;
-  background-color: aqua;
+  color: #fff;
 }
+
+.learn-more > .text > h1{
+  font-size: 3em;
+  line-height: 1;
+}
+
+.learn-more > .text > p{
+  font-weight: 300;
+}
+
 
 .learn-more > .image {
   flex: 6;
-  background-color: cadetblue;
+}
+
+.learn-more > .image > img {
+  max-width: 42rem;
+  max-height: 50rem;
 }
 
 .steps {
   display: flex;
   height: 40vh;
+  margin-left: 9rem;
 }
 
 .step {
   flex: 1;
+}
+
+.button {
+  background: none;
+  height: fit-content;
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.rounded {
+  border-radius: 34px;
+  padding: .5rem 1rem;
+  margin-top: .5rem;
+}
+
+.pink {
+  background-color: #fd829c;
+}
+
+.purple {
+  background-color: #8C4ACA;
+}
+
+.hr-pink {
+  color: #8C4ACA;
+  border: 1px solid;
+  border-radius: 7%;
+}
+
+.lets-start > h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #9d52cb;
+}
+
+.hr-orange {
+  color: #fd829c;
+  width: 11rem;
+  border: 3px solid;
+  border-radius: 7%;
+}
+
+.list-text {
+    list-style-type: none;
+    position: relative;
+}
+
+.steps > .step > h1{
+  font-size: 6em;
+}
+
+.steps > .step > h3{
+  font-size: 2em;
+}
+
+
+.step-1 {
+    color: #8C4ACA;
+    background: transparent url('../assets/contact_us.png') 0% 0% no-repeat padding-box;
+    background-size: 181px 149px;
+    background-position-x: 53px;
+    background-position-y: 120px;
+}
+.step-2 {
+    color: #A857CC;
+    background: transparent url('../assets/choose_plan.png') 0% 0% no-repeat padding-box;
+    background-size: 157px;
+    background-position-x: 80px;
+    background-position-y: 79px;
+}
+.step-3{
+    color: #C06ECE;
+    background: transparent url('../assets/have_rest.png') 0% 0% no-repeat padding-box;
+    background-size: 160px 156px;
+    background-position-x: 85px;
+    background-position-y: 87px;
+}
+
+.step > hr {
+    width: 8rem;
+    margin: 0;
+}
+
+.lets-start-button {
+  text-align: center;
+  margin-top: 12rem;
+}
+
+.plans-page {
+  background: url(../assets/2.png) no-repeat;
+  background-size: 100% 115%;
+  height: 150vh;
+}
+
+.plans-page > h1 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3em;
+  color: #fff;
+}
+
+.plans {
+  display: flex;
+  margin-left: 5rem;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+
+.plan {
+  background: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  width: 22rem;
+  height: 30rem;
+  padding: 0 1rem;
+  color: #9d52cb;
+}
+
+.check {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+}
+
+.check-text {
+    display: inline-block;
+    text-align: left;
+    font: normal normal medium 16px Poppins;
+    letter-spacing: 0px;
+    color: #8C4ACA;
+    padding-left: 13px;
+}
+
+.plan > ul {
+  list-style-image: url(../assets/check.png);
+  line-height: .1;
+  background-size: 16px;
+}
+
+.plan > hr.hr-orange {
+  margin: 0;
+  width: 5rem;
+}
+
+.under-plans {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 17rem;
+}
+
+.stat {
+  text-align: center;
+  width: 12.5rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.stat > h1 {
+  font-size: 3em;
+}
+
+.card {
+  display: flex;
+  background: #F4F4F4 0% 0% no-repeat padding-box;
+  box-shadow: -6px -6px 11px #7171712B, 6px 6px 11px #0000002B;
+  border-radius: 45px;
+  margin-bottom: 3rem;
+  width: 30rem;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.card-info {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-name {
+  text-align: left;
+  font: normal normal bold 19px Poppins;
+  letter-spacing: 0px;
+  color: #A154CB;
+}
+
+.card-review {
+  text-align: left;
+  font: normal normal 500 12px / 16px Poppins;
+  letter-spacing: 0px;
+  color: #A154CB;
+}
+
+.stars-list {
+    display: flex;
+    padding: 0;
+    padding-bottom: 24px;
+}
+.star-item {
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+.star {
+    width: 12px;
+    height: 11px;
+    margin-right: 2px;
+}
+
+.card-img-item {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  box-shadow: 6px 6px 11px #00000026;
+}
+
+.feedbacks > h1 {
+  font-size: 2.5em;
+  color: #A154CB;
+}
+
+.contact {
+  margin-top: 1rem;
+  height: 100vh;
+  background-image: url(../assets/3.png);
+  background-size: 100% 100%;
+}
+
+.phone-svg {
+    fill: #F4F4F4;
+    width: 39px;
+    height: 39px;   
+}
+
+.envelope-svg {
+    box-sizing: border-box;
+    fill: #F4F4F4;
+    width: 43px;
+    height: 50px;
+}
+
+.location-svg {
+    fill: #F4F4F4;
+    width: 37px;
+    height: 48px;
+    text-align: right;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+
+.contact > h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+
+.form-input-list {
+    padding-top: 2rem;
+}
+
+.form-input-item {
+    padding: 0;
+}
+
+.contact-form {
+    resize: none;
+}
+
+.form-input-item, .contact-form {
+  background: #F4F4F4 0% 0% no-repeat padding-box;
+  box-shadow: 6px 6px 11px #00000026;
+  border: 4px solid #FD829C;
+  border-radius: 16px;
+  opacity: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font: normal normal 600 20px Poppins;
+  letter-spacing: 0px;
+  color: #A355CB;
+  width: 86%;
+  opacity: 1;
+}
+
+.contact-button {
+    width: 20%;
+    height: 41px;
+    padding: 0;
+    background: #FD829C 0% 0% no-repeat padding-box;
+    box-shadow: -6px -6px 11px #7171712B,6px 6px 11px #0000002B;
+    font: normal normal 600 20px Poppins;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    border: 4px solid #fd829c;
+    color: #FFF; 
+    margin-bottom: 30px;
+}
+
+.contact-button:hover {
+    background: #FFF 0% 0% no-repeat padding-box;
+    color: #FD829C; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-input {
+  border: 0;
+}
+
+.links > ul {
+  color: #fff;
 }
