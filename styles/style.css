@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 20vh;
+  background: pink;
+}
+
+.logo, .navigation {
+  flex: 1;
+  display: inherit;
+  background-color: blueviolet;
+}
+
+.logo {
+  /* font-size: 1.7rem; */
+  /* font-weight: bold; */
+  background-color: red;
+}
+
+.learn-more, .header {
+  display: flex;
+  margin-left: 8rem;
+}
+
+.learn-more {
+  height: 80vh;
+}
+
+.learn-more > .text {
+  flex: 4;
+  background-color: aqua;
+}
+
+.learn-more > .image {
+  flex: 6;
+  background-color: cadetblue;
+}
+
+.steps {
+  display: flex;
+  height: 40vh;
+}
+
+.step {
+  flex: 1;
+}
