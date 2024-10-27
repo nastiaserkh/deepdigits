@@ -1,0 +1,77 @@
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+
+  .learn-more {
+    flex-direction: column;
+    margin-top: -5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .learn-more > .image {
+    margin-top: 5rem;
+  }
+
+  .learn-more > .image > img {
+  max-width: 15rem;
+  max-height: 20rem;
+  }
+
+  .header {
+    margin-left: 2rem;
+  }
+
+  .steps {
+    margin-left: 5rem;
+    flex-direction: column;
+  }
+
+  .lets-start-button {
+    margin-top: 58rem;
+  }
+
+  .plans-page > h1 {
+    padding-top: 9rem;
+  }
+
+  .plans {
+    margin-left: 1.5rem;
+    flex-direction: column;
+  }
+
+  .plan {
+    margin-top: 1rem;
+  }
+
+  .plans-page {
+    height: 250vh;
+    background-size: 210% 100%;
+  }
+
+  .under-plans {
+    margin-left: 8rem;
+    flex-direction: column;
+  }
+
+  .feedbacks {
+    margin-left: -5.5rem;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .card {
+    width: 22rem;
+  }
+
+  .contact {
+    margin-top: 25rem;
+    background-size: 100% 120%;
+  }
+
+  .form-container {
+    margin-left: 1rem;
+    flex-direction: column;
+  }
+}
