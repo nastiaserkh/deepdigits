@@ -1,4 +1,13 @@
 @media screen and (max-width: 767px) {
+  .logo {
+    margin-top: -.7rem;
+    text-align: right;
+  }
+
+  .hamburger-menu {
+    display: unset;
+  }
+
   .navigation {
     display: none;
   }
