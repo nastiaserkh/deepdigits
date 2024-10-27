@@ -1,0 +1,66 @@
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .navigation {
+    display: none;
+  }
+
+  .learn-more {
+    margin-top: -5rem;
+  }
+
+  .learn-more > .image > img {
+  max-width: 45rem;
+  max-height: 50rem;
+  }
+
+  .header {
+    margin-left: 2rem;
+  }
+
+  .lets-start {
+    margin-top: 4rem;
+  }
+
+  .lets-start-button {
+    margin-top: 58rem;
+  }
+
+  .plans-page > h1 {
+    padding-top: 13rem;
+  }
+
+  .plans, .under-plans, .steps, .learn-more {
+    align-items: center;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .plan {
+    margin-top: 1rem;
+  }
+
+  .plans-page {
+    height: 183vh;
+    background-size: 210% 100%;
+  }
+
+  .feedbacks {
+    margin-left: -5.5rem;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .card {
+    width: 22rem;
+  }
+
+  .contact {
+    height: 75vh;
+    margin-top: 25rem;
+    background-size: 100% 120%;
+  }
+
+  .form-container {
+    margin-left: 1rem;
+    flex-direction: column;
+  }
+}
