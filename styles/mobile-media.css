@@ -3,13 +3,6 @@
     display: none;
   }
 
-  .learn-more {
-    flex-direction: column;
-    margin-top: -5rem;
-    text-align: center;
-    margin-left: 0;
-  }
-
   .learn-more > .image {
     margin-top: 5rem;
   }
@@ -23,8 +16,9 @@
     margin-left: 2rem;
   }
 
-  .steps {
-    margin-left: 5rem;
+  .plans, .under-plans, .steps, .learn-more {
+    align-items: center;
+    margin-left: 0;
     flex-direction: column;
   }
 
@@ -36,9 +30,8 @@
     padding-top: 9rem;
   }
 
-  .plans {
-    margin-left: 1.5rem;
-    flex-direction: column;
+  .plans, .under-plans {
+    margin-left: 5rem;
   }
 
   .plan {
@@ -48,11 +41,6 @@
   .plans-page {
     height: 250vh;
     background-size: 210% 100%;
-  }
-
-  .under-plans {
-    margin-left: 8rem;
-    flex-direction: column;
   }
 
   .feedbacks {
@@ -66,7 +54,8 @@
   }
 
   .contact {
-    margin-top: 25rem;
+    margin-top: 0;
+    height: 75vh;
     background-size: 100% 120%;
   }
 
