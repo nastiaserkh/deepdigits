@@ -498,3 +498,13 @@ body {
 .menu-item:hover {
   background-color: #CFD8DC;
 }
+
+.video {
+  margin: auto;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+
+.plan:hover {
+  background-color: #CFD8DC;
+}
